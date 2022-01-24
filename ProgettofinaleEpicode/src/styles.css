@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color:rgb(138, 140, 245) ;
+    text-align: center;
+}
+
+.header{
+    background-color: tomato;
+
+}
