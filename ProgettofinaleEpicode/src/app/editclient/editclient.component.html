@@ -1,0 +1,81 @@
+<form class="my-5 mx-0">
+    <h2 class="text-white mx-3">Inserire i dati del nuovo cliente</h2>
+    <div class="form-group">
+        <div class="my-3 mx-3">
+            <label>Password</label>
+            <input name="ragionesociale" [(ngModel)]="cliente.ragioneSociale" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Partita Iva</label>
+            <input name="partitaIva" [(ngModel)]="cliente.partitaIva" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Tipo di Cliente</label>
+            <input name="tipoCliente" [(ngModel)]="cliente.tipoCliente" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Email</label>
+            <input name="email" [(ngModel)]="cliente.email" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Pec</label>
+            <input name="pec" [(ngModel)]="cliente.pec" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Telefono</label>
+            <input name="telefono" [(ngModel)]="cliente.telefono" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Nome contatto</label>
+            <input name="nomeContatto" [(ngModel)]="cliente.nomeContatto" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Cognome contatto</label>
+            <input name="cognomeContatto" [(ngModel)]="cliente.cognomeContatto" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Telefono Contatto</label>
+            <input name="telefonoContatto" [(ngModel)]="cliente.telefonoContatto" type="text" class="form-control">
+        </div>
+
+        <div class="my-3 mx-3">
+            <label>Email contatto</label>
+            <input name="emailContatto" [(ngModel)]="cliente.emailContatto" type="text" class="form-control">
+        </div>
+        <div class="d-flex my-3">
+            <div class="col">
+                <label>Località:</label>
+                <input name="indirizzoSedeOperativa.localita" [(ngModel)]="cliente.indirizzoSedeOperativa.localita"
+                    type="text" class="form-control ">
+            </div>
+
+            <div class="col">
+                <label>Comune:</label>
+                <input name="indirizzoSedeOperativa.comune.id" [(ngModel)]="cliente.indirizzoSedeOperativa.comune.nome"
+                    type="text" class="form-control ">
+            </div>
+
+            <div class="col">
+                <label>Via:</label>
+                <input name="indirizzoSedeOperativa.via" [(ngModel)]="cliente.indirizzoSedeOperativa.via" type="text"
+                    class="form-control p-0">
+            </div>
+            <div class="col">
+                <label>Civico:</label>
+                <input name="indirizzoSedeOperativa.civico" [(ngModel)]="cliente.indirizzoSedeOperativa.civico"
+                    type="text" class="form-control ">
+            </div>
+        </div>
+        <button type="submit" (click)="salva()" class="btn btn-verde mx-3">Salva</button>
+    </div>
+
+
+</form>

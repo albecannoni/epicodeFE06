@@ -1,0 +1,41 @@
+<div class=" container justify-content-center">
+    <table class="table my-5 m-0 p-0 align-items-center">
+        <thead class="border">
+            <tr class="border p-1 ">
+                <th scope="col ml-2" class="border">ID</th>
+                <th scope="col ml-2" class="border">Ragione Sociale</th>
+                <th scope="col ml-2" class="border">Partita Iva</th>
+                <th scope="col ml-2" class="border">Tipo Cliente</th>
+                <th scope="col ml-2" class="border"> Indirizzo Email</th>
+                <th scope="col ml-2" class="border">Telefono</th>
+                <th scope="col ml-2" class="border">Nome Contatto</th>
+                <th scope="col ml-2" class="border">Cognome Contatto</th>
+                <th class="border text-center"><i class="bi bi-activity justify-content-center align-self-center"></i>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border " *ngFor="let item of clienti">
+                <th scope="col" class="border">{{item.id}}</th>
+                <td scope="col" class="border">{{item.ragioneSociale}}</td>
+                <td scope="col" class="border">{{item.partitaIva}}</td>
+                <td scope="col" class="border">{{item.tipoCliente}}</td>
+                <td scope="col" class="border">{{item.email}}</td>
+                <td scope="col" class="border">{{item.telefono}}</td>
+                <td scope="col" class="border">{{item.nomeContatto}}</td>
+                <td scope="col" class="border">{{item.cognomeContatto}}</td>
+
+                <td scope="col"
+                    class="border d-flex justify-content-center align-self-center align-content-center flex-grow-1 mt-3 bg-viola ">
+                    <button type="button" (click)="info(this.item)" class="btn-sm btn-dark m-1"><i
+                            class="bi bi-info-square"></i></button>
+
+                    <button type="button" (click)="edit(this.item)" class="btn-sm btn-warning m-1"><i
+                            class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" (click)="remove(item.id)" class="btn-sm btn-danger m-1"><i
+                            class="bi bi-trash"></i></button>
+                </td>
+            </tr>
+    </table>
+</div>

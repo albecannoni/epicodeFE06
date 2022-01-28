@@ -1,0 +1,78 @@
+
+<table class="table m-5 p-5 text-white container">
+
+    
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Ragione sociale</h5> </td>
+        <td><p>{{cliente.ragioneSociale}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Partita Iva</h5></td>
+        <td><p>{{cliente.partitaIva}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Tipo di cliente</h5></td>
+        <td>{{cliente.tipoCliente}}</td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Email</h5></td>
+        <td><p>{{cliente.email}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>PEC</h5></td>
+        <td><p>{{cliente.pec}}</p></td>
+    </tr>
+   
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Telefono </h5></td>
+        <td><p>{{cliente.telefono}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Nome contatto</h5></td>
+        <td><p>{{cliente.nomeContatto}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Cognome contatto</h5></td>
+        <td><p>{{cliente.cognomeContatto}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>telefonoContatto</h5></td>
+        <td><p>{{cliente.telefonoContatto}}</p></td>
+    </tr>
+    <tr scope="row" class="border">
+        <td class="border col-3"><h5>Email contatto</h5></td>
+        <td><p> {{cliente.emailContatto}}</p></td>
+    </tr>
+   
+    <tr scope="row" class="border">
+        <td class="border col-3">
+            <h5>Indirizzo Sede Operativa</h5>
+        </td>
+            <td>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item  liste"><strong>Località:&nbsp;</strong>{{cliente.indirizzoSedeOperativa.localita}}</li>
+                    <li class="list-group-item  liste"><strong>Via:&nbsp; </strong>{{cliente.indirizzoSedeOperativa.via}}</li>
+                    <li class="list-group-item  liste"><strong>Civico: &nbsp;</strong>{{cliente.indirizzoSedeOperativa.civico}}</li>
+                    <li class="list-group-item  liste"><strong>Id:&nbsp;</strong>{{cliente.indirizzoSedeOperativa.id}}</li>
+                    
+                </ul>
+            </td>
+
+            <tr scope="row" class="border">
+                <td class="border col-3">
+                    <h5>Indirizzo Sede legale</h5>
+                </td>
+                    <td>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item  liste"><strong>Località:&nbsp; </strong> {{cliente.indirizzoSedeLegale.localita}}</li>
+                            <li class="list-group-item   liste"><strong>Via:&nbsp; </strong>  {{cliente.indirizzoSedeLegale.via}}</li>
+                            <li class="list-group-item   liste"><strong>Civico:&nbsp; </strong> {{cliente.indirizzoSedeLegale.civico}}</li>
+                            <li class="list-group-item   liste"><strong>Id:&nbsp;</strong>  {{cliente.indirizzoSedeLegale.id}}</li>
+                            </ul>
+                    </td>
+            
+            
+            
+
+
+</table>

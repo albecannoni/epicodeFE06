@@ -1,10 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-color:rgb(138, 140, 245) ;
-    text-align: center;
+body {
+    background-color: rgb(136, 134, 240);
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-.header{
-    background-color: tomato;
+.header {
+    background-color: rgb(108, 39, 199);
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    font-family: 'Space Grotesk', sans-serif;
+}
 
+.bg-viola {
+    background-color: rgb(108, 39, 199);
+    height: 70px;
+    box-shadow: black 20px;
+}
+
+.simbolo {
+    width: 200px;
+    height: 120px;
+}
+
+.liste, tr {
+    background-color: rgb(26, 197, 117);
+    border-radius: 10px;
+    height: 120px;
+}
+
+.btn-verde {
+    background-color: rgb(26, 197, 117);
+    border-radius: 10px;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+table {
+    border-radius: 5px;
+}
+
+p, h5, li {
+    font-size: larger;
+}
+
+td, th {
+    color: white;
+    font-size: larger;
+    text-decoration: solid;
+}
+.homepage{
+height: 90vh;
 }
